@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Problem 4 – Restaurant Bill Calculator</title>
+</head>
+<body>
+  <h1>Restaurant Bill Calculator</h1>
+
+  <script>
+    let food = parseFloat(prompt("Enter the food cost:"));
+    let drink = parseFloat(prompt("Enter the drink cost:"));
+
+    if (isNaN(food) || isNaN(drink) || food < 0 || drink < 0) {
+      document.write("Error: Please enter valid positive numbers.");
+    } else {
+      let subtotal = food + drink;
+      let totalWithTax = subtotal * 1.062;
+      let finalTotal = totalWithTax * 1.15;
+
+      document.write("Subtotal: $" + subtotal.toFixed(2) + "<br>");
+      document.write("Total with 6.2% tax: $" + totalWithTax.toFixed(2) + "<br>");
+      document.write("Final total with 15% tip: $" + finalTotal.toFixed(2) + "<br>");
+    }
+  </script>
+
+  <!-- Reflection:
+  I practiced document.write() and added validation for extra credit.
+  -->
+</body>
+</html>

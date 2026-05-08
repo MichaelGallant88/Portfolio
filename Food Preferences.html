@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem 4 – Food Preferences</title>
+</head>
+<body>
+
+<script>
+    // Problem 4 – Food Preferences (Pizza & Chinese)
+
+    // Ask the user two Yes/No questions
+    let likesPizza = confirm("Do you like pizza? Click OK for Yes, Cancel for No.");
+    let likesChinese = confirm("Do you like Chinese food? Click OK for Yes, Cancel for No.");
+
+    // Decision logic for all combinations
+    if (likesPizza && likesChinese) {
+        alert("You love delicious things!");
+    } else if (likesPizza || likesChinese) {
+        alert("You have good taste!");
+    } else {
+        alert("Maybe you'll find something you like someday!");
+    }
+</script>
+
+<!--
+Reflection – Problem 4
+This problem required two separate Yes/No questions and a more complex decision structure.
+The flowchart helped me map out all four possible combinations of answers and match each
+one to the correct message. It showed how multiple decisions can work together to create
+different outcomes based on user preferences.
+-->
+
+</body>
+</html>
